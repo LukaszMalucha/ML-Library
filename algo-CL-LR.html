@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logistic Regression</title>
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize-->
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <!-- TOP NAVBAR -->
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><i class="large material-icons">blur_on</i><strong>ML Library</strong></a>
+
+                <div id="NavReduce"><i class="material-icons dp48" style="color: #15201B">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fas fa-object-group" id="top_icon"></i> <b>Data Dashboard</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fas fa-tasks" id="top_icon"></i> <b>Issue Tracker</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fa fa-fw fa-file" id="top_icon"></i> <b>Templates</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" data-activates="dropdown1"><i class="fa fa-user fa-fw" id="top_icon"></i> <b>Lukasz Malucha</b></a></li>
+            </ul>
+        </nav>
+
+        <!-- DROPDOWN -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="wip.html"><i class="fa fa-user fa-fw" style="color:#FFCB9A"></i> My Profile</a>
+            </li>
+            <li><a href="wip.html"><i class="fas fa-cog" style="color:#FFCB9A"></i> Settings</a>
+            </li>
+            <li><a href="wip.html"><i class="fas fa-sign-out-alt" style="color:#FFCB9A"></i> Logout</a>
+            </li>
+        </ul>
+
+        <!--/. TOP NAVBAR ****************************************************************************************************************************************************************************************** -->
+
+        <!-- SIDE NAVBAR -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list" ></i> Regression<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-R-SLR.html"><i class="fab fa-python"></i>Simple Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-MLR.html"><i class="fab fa-python"></i>Multiple Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-PR.html"><i class="fab fa-python"></i>Polynomial Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-SVR.html"><i class="fab fa-python"></i>Support Vector Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-RFR.html"><i class="fab fa-python"></i>Random Forest Regression</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Classification<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-CL-LR.html"><i class="fab fa-python"></i>Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-KNN.html"><i class="fab fa-python"></i>K-Nearest Neighbors</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-KSVM.html"><i class="fab fa-python"></i>Kernel SVM</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-NB.html"><i class="fab fa-python"></i>Naive Bayes Classification</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-RF.html"><i class="fab fa-python"></i>Random Forest Classification</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Clustering<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-cluster-KMeans.html"><i class="fab fa-python"></i>K-Means Clustering</a>
+                            </li>
+                            <li>
+                                <a href="algo-cluster-HC.html"><i class="fab fa-python"></i>Hierarchical Clustering</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Associated Rule Learning<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-ARR-apriori.html"><i class="fab fa-python"></i>Apriori</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Dimensionality Reduction<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-DR-LDA.html"><i class="fab fa-python"></i>Linear Discriminant Analysis</a>
+                            </li>
+                            <li>
+                                <a href="algo-DR-KPCA.html"><i class="fab fa-python"></i>Kernel PCA</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Deep Learning<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-DL-ANN.html"><i class="fab fa-python"></i>Artificial Neural Networks</a>
+                            </li>
+                            <li>
+                                <a href="algo-DL-CNN.html"><i class="fab fa-python"></i>Convolutional Neural Networks</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- /. SIDE NAVBAR  ************************************************************************************************************************************************************************************************-->
+        <div id="page-wrapper">
+            <div id="page-algorithm">
+                <div class="dashboard-cards">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
+                        <div class="col-md-12 col-lg-10 text-center">
+                            <div class="card" id="title_card">
+                                <p>LOGISTIC REGRESSION</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
+                        <div class="row"></div>
+                    </div>
+                    <div class="row" id="menu_row">
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 text-center">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Preprocessing</h2>
+                                        <div class="card-panel">
+                                            <p>Label Encoding</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>One Hot Encoding</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>StandardScaler</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>Train-Test Split</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Packages</h2>
+                                        <div class="card-panel">
+                                            <p>pandas</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>numpy</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>matplotlib.pyplot</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>matplotlib.colors</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>sklearn.model_selection</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>sklearn.preprocessing</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>sklearn.neighbors</p>
+                                        </div>
+                                        <div class="card-panel">
+                                            <p>sklearn.metrics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 text-center">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Parameters</h2>
+                                        <div class="card-panel">
+                                            <p>train_test_split(test_size)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Red Flags</h2>
+                                        <div class="card-panel" id="red_flag">
+                                            <p>Dummy Variable Trap</p>
+                                        </div>
+                                        <div class="card-panel" id="red_flag">
+                                            <p>Overfitting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Learning Method</h2>
+                                        <div class="card-panel">
+                                            <p>Supervised Learning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 text-center">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="pyplot">
+                                        <h2>Visualisation</h2>
+                                        <img id="plot" src="assets/img/LR.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="card" id="info_content">
+                                        <h2>Documentation Links</h2>
+                                        <div class="card-panel">
+                                            <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">
+                                                <p>scikit-learn</p>
+                                            </a>
+                                        </div>
+                                        <div class="card-panel">
+                                            <a href="https://www.kdnuggets.com/2016/08/primer-logistic-regression-part-1.html">
+                                                <p>KDNuggets</p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+            <footer id="GreyFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h5>Get started</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="wip.html">Sign in</a></li>
+                                <li><a href="terms.html">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                            <h5>Tools</h5>
+                            <ul>
+                                <li><a href="wip.html">Data Dashboard</a></li>
+                                <li><a href="wip.html">Issue Tracker</a></li>
+                                <li><a href="wip.html">Code Templates</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="https://github.com/LukaszMalucha/UCFD-Milestone-Project">Our Projects</a></li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="social-networks">
+                                <a href="index.html" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="index.html" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/LukaszMalucha/UCFD-Milestone-Project" class="github"><i class="fab fa-github"></i></a>
+                                <a href="index.html" class="google"><i class="fab fa-google-plus-square"></i></a>
+                            </div>
+                            <a href="contact.html"><button type="button" class="btn btn-default">Contact us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Page-Inner -->
+    </div>
+    <!-- Page-Wrapper -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/materialize/js/materialize.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+
+
+    <script src="assets/js/easypiechart.js"></script>
+    <script src="assets/js/easypiechart-data.js"></script>
+
+    <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+
+</body>
+
+</html>
