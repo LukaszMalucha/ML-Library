@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ML Library</title>
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize-->
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <!-- TOP NAVBAR -->
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><i class="large material-icons">blur_on</i><strong>ML Library</strong></a>
+
+                <div id="NavReduce"><i class="material-icons dp48" style="color: #15201B">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fas fa-object-group" id="top_icon"></i> <b>Data Dashboard</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fas fa-tasks" id="top_icon"></i> <b>Issue Tracker</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="wip.html"><i class="fa fa-fw fa-file" id="top_icon"></i> <b>Templates</b></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" data-activates="dropdown1"><i class="fa fa-user fa-fw" id="top_icon"></i> <b>Lukasz Malucha</b></a></li>
+            </ul>
+        </nav>
+
+        <!-- DROPDOWN -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="wip.html"><i class="fa fa-user fa-fw" style="color:#FFCB9A"></i> My Profile</a>
+            </li>
+            <li><a href="wip.html"><i class="fas fa-cog" style="color:#FFCB9A"></i> Settings</a>
+            </li>
+            <li><a href="wip.html"><i class="fas fa-sign-out-alt" style="color:#FFCB9A"></i> Logout</a>
+            </li>
+        </ul>
+
+        <!--/. TOP NAVBAR ****************************************************************************************************************************************************************************************** -->
+
+        <!-- SIDE NAVBAR -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list" ></i> Regression<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-R-SLR.html"><i class="fab fa-python"></i>Simple Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-MLR.html"><i class="fab fa-python"></i>Multiple Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-PR.html"><i class="fab fa-python"></i>Polynomial Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-SVR.html"><i class="fab fa-python"></i>Support Vector Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-R-RFR.html"><i class="fab fa-python"></i>Random Forest Regression</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Classification<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-CL-LR.html"><i class="fab fa-python"></i>Linear Regression</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-KNN.html"><i class="fab fa-python"></i>K-Nearest Neighbors</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-KSVM.html"><i class="fab fa-python"></i>Kernel SVM</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-NB.html"><i class="fab fa-python"></i>Naive Bayes Classification</a>
+                            </li>
+                            <li>
+                                <a href="algo-CL-RF.html"><i class="fab fa-python"></i>Random Forest Classification</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Clustering<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-cluster-KMeans.html"><i class="fab fa-python"></i>K-Means Clustering</a>
+                            </li>
+                            <li>
+                                <a href="algo-cluster-HC.html"><i class="fab fa-python"></i>Hierarchical Clustering</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Associated Rule Learning<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-ARR-apriori.html"><i class="fab fa-python"></i>Apriori</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Dimensionality Reduction<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-DR-LDA.html"><i class="fab fa-python"></i>Linear Discriminant Analysis</a>
+                            </li>
+                            <li>
+                                <a href="algo-DR-KPCA.html"><i class="fab fa-python"></i>Kernel PCA</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark"><i class="fas fa-th-list"></i> Deep Learning<span class="material-icons right">chevron_left</span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="algo-DL-ANN.html"><i class="fab fa-python"></i>Artificial Neural Networks</a>
+                            </li>
+                            <li>
+                                <a href="algo-DL-CNN.html"><i class="fab fa-python"></i>Convolutional Neural Networks</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- /. SIDE NAVBAR  ************************************************************************************************************************************************************************************************-->
+
+        <!-- PAGE-WRAPPER -->
+        <div id="page-wrapper">
+
+            <!-- PAGE-INDEX -->
+            <div id="page-index">
+                <div class="dashboard-cards">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                        <div class="col-md-10 text-center">
+                            <div class="card" id="title_card">
+                                <p>Web Site Terms and Conditions of Use</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
+                        <div class="col-md-5 text-center">
+                            <div class="card" id="terms_card">
+                                <h3>
+                                    1. Terms
+                                </h3>
+
+                                <p>
+                                    By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any
+                                    of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.
+                                </p>
+
+                                <h3>
+                                    2. Use License
+                                </h3>
+
+                                <ol type="a">
+                                    <li>
+                                        Permission is granted to temporarily download one copy of the materials (information or software) on ML Library's web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license
+                                        you may not:
+
+                                        <ol type="i">
+                                            <li>modify or copy the materials;</li>
+                                            <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+                                            <li>attempt to decompile or reverse engineer any software contained on ML Library's web site;</li>
+                                            <li>remove any copyright or other proprietary notations from the materials; or</li>
+                                            <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        This license shall automatically terminate if you violate any of these restrictions and may be terminated by ML Library at any time.
+                                    </li>
+                                </ol>
+
+                                <h3>
+                                    3. Disclaimer
+                                </h3>
+
+                                <ol type="a">
+                                    <li>
+                                        The materials on ML Library's web site are provided "as is". ML Library makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability,
+                                        fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, ML Library does not warrant or make any representations concerning the accuracy, likely results,
+                                        or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <div class="card" id="terms_card">
+                                <h3>
+                                    4. Limitations
+                                </h3>
+
+                                <p>
+                                    In no event shall ML Library or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on ML Library's Internet
+                                    site, even if ML Library or a ML Library authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties,
+                                    or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                                </p>
+                                <h3>
+                                    5. Revisions and Errata
+                                </h3>
+
+                                <p>
+                                    The materials appearing on ML Library's web site could include technical, typographical, or photographic errors. ML Library does not warrant that any of the materials on its web site are accurate, complete, or current. ML Library may make changes to the
+                                    materials contained on its web site at any time without notice. ML Library does not, however, make any commitment to update the materials.
+                                </p>
+                                <h3>
+                                    6. Links
+                                </h3>
+
+                                <p>
+                                    ML Library has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by ML Library of the site. Use of any such linked web site
+                                    is at the user's own risk.
+                                </p>
+
+                                <h3>
+                                    7. Site Terms of Use Modifications
+                                </h3>
+
+                                <p>
+                                    ML Library may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+                                </p>
+
+                                <h3>
+                                    8. Governing Law
+                                </h3>
+
+                                <p>
+                                    Any claim relating to ML Library's web site shall be governed by the laws of the State of Ireland without regard to its conflict of law provisions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-5"></div>
+                        <div class="col-md-2 text-center">
+                            <a href="">
+                                <div class="card" id="title_card">
+                                    <h3>Download Terms of Use</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-5"></div>
+                    </div>
+                </div>
+                <footer id="GreyFooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <h5>Get started</h5>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="wip.html">Sign in</a></li>
+                                    <li><a href="terms.html">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <h5>Tools</h5>
+                                <ul>
+                                    <li><a href="wip.html">Data Dashboard</a></li>
+                                    <li><a href="wip.html">Issue Tracker</a></li>
+                                    <li><a href="wip.html">Code Templates</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <h5>Support</h5>
+                                <ul>
+                                    <li><a href="https://github.com/LukaszMalucha/UCFD-Milestone-Project">Our Projects</a></li>
+                                    <li><a href="mission.html">Our Mission</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="social-networks">
+                                    <a href="index.html" class="facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="index.html" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://github.com/LukaszMalucha/UCFD-Milestone-Project" class="github"><i class="fab fa-github"></i></a>
+                                    <a href="index.html" class="google"><i class="fab fa-google-plus-square"></i></a>
+                                </div>
+                                <a href="contact.html"><button type="button" class="btn btn-default">Contact us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- PAGE-INDEX -->
+
+        </div>
+        <!-- PAGE-WRAPPER -->
+
+    </div>
+    <!-- WRAPPER -->
+
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Materialize Js -->
+    <script src="assets/materialize/js/materialize.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+</body>
+
+</html>
