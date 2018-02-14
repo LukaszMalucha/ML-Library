@@ -1,0 +1,1384 @@
+/*------------------------------------------------------------------------------
+    MAIN  STYLES    
+------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #062324;
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#menu_row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    background: #062324;
+    position: relative;
+    top: 55px;
+    -moz-box-shadow: 0 0 10px #757575;
+}
+
+#page-index {
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    padding: 15px 30px;
+    background-image: url('../img/backg.png');
+    background-size: cover
+}
+
+#page-index a {
+    text-decoration: none;
+    outline: 0;
+}
+
+#page-selection {
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    padding: 15px 30px;
+    background-image: url('../img/backg.png');
+    background-size: cover
+}
+
+#page-algorithm {
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    padding: 15px 30px;
+    min-height: 1200px;
+    background-image: url('../img/backg.png');
+    background-size: cover
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background-color: #008080;
+    border-radius: 20px;
+    border: none;
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.btn:hover {
+    background-color: #0E5254;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------
+    TOP NAVBAR    
+------------------------------------------------------------------------------*/
+
+.top-navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 300;
+    background: #232a27;
+    border-bottom: none;
+}
+
+.navbar-brand i.large.material-icons {
+    float: left;
+    font-size: 31px;
+    margin-right: 6px;
+}
+
+.top-navbar .navbar-brand {
+    color: #ffffff;
+    width: 260px;
+    text-align: left;
+    height: 60px;
+    font-size: 28px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 30px;
+    background: #232a27;
+    border-radius: 10px;
+}
+
+.top-navbar .nav>li {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.top-navbar .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 17px;
+    color: #ffffff;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.top-navbar .nav>li>a>i {
+    margin-right: 0;
+}
+
+.navbar-brand i.large.material-icons {
+    float: left;
+    font-size: 36px;
+    margin-right: 6px;
+}
+
+.top-navbar .nav>li>a b {
+    margin: 0 5px;
+}
+
+#top_icon {
+    color: #FFCB9A;
+}
+
+.top-navbar .dropdown-menu {
+    min-width: 230px;
+    border-radius: 0 0 4px 4px;
+    border: 0;
+}
+
+.dropdown-content {
+    min-width: 165px !important;
+    left: -38px !important;
+    top: 60px !important;
+    background-color: #062324;
+}
+
+.dropdown-content li>a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.dropdown-content li>a i {
+    font-size: 16px;
+}
+
+/* Hovers and Focuses --------------------------------------------------------*/
+
+.top-navbar .nav>li>a:hover,
+.top-navbar .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #e0e8f5;
+    color: #fff;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: #075CB3;
+    border-color: #075CB3;
+
+}
+
+.top-navbar .nav>li>a:hover,
+.top-navbar .nav>li>a:focus {
+    text-decoration: none;
+    background: #0E5254;
+    outline: 0px;
+
+}
+
+.top-navbar .dropdown-menu>li>a:hover,
+.top-navbar .dropdown-menu>li>a:focus {
+    color: #225081;
+    background: none;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+.top-navbar .navbar-brand:hover {
+    background-color: #0E5254;
+    outline: 0px;
+}
+
+/*------------------------------------------------------------------------------
+    SIDE NAVBAR    
+------------------------------------------------------------------------------*/
+
+.navbar-side {
+    z-index: 2;
+    position: fixed;
+    width: 260px;
+    border: none;
+    background: #232a27;
+    box-shadow: none;
+    top: 64px;
+}
+
+.navbar-side .nav>li>a>i {
+    color: #D9B08C;
+    padding: 8px;
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav>li>a {
+    padding-left: 35px;
+}
+
+.sidebar-collapse,
+.sidebar-collapse .nav {
+    background: none;
+}
+
+.sidebar-collapse .nav {
+    padding: 0;
+}
+
+.sidebar-collapse .nav>li>a {
+    color: #ffffff;
+    font-weight: bold;
+    background: transparent;
+    text-shadow: none;
+}
+
+.sidebar-collapse>.nav>li>a {
+    padding: 14px 14px 14px 20px;
+    font-size: 16px;
+}
+
+.sidebar-collapse>.nav>li {
+    border-bottom: 1px solid #232a27;
+}
+
+.navbar-default {
+    border: 0px solid #1f2837;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #D9B08C;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.fa-th-list,
+.fa-python,
+.fa-file,
+.material-icons {
+    color: #FFCB9A;
+    margin-right: 2px;
+
+}
+
+/* Hovers and Focuses --------------------------------------------------------*/
+
+.sidebar-collapse .nav>li>a:hover,
+.sidebar-collapse .nav>li>a:focus {
+    outline: 0;
+    background-color: #116466
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #116466;
+}
+
+.nav-second-level:hover,
+.nav-second-level:focus {
+    background-color: #232a27;
+}
+
+.nav>li:focus,
+.nav>li:hover {
+    background-color: #232a27;
+}
+
+/*------------------------------------------------------------------------------
+    NAVREDUCE (Button) 
+------------------------------------------------------------------------------*/
+
+#NavReduce {
+    float: left;
+    left: 0;
+    z-index: 3;
+    color: #1F2837;
+    cursor: pointer;
+    font-size: 44px;
+    line-height: 33px;
+    margin: 7px 0 0 13px;
+    background: #FFCB9A;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    padding-top: 8px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.closed {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dp48 {
+    color: #FFCB9A;
+}
+
+/*------------------------------------------------------------------------------
+    FOOTER     
+------------------------------------------------------------------------------*/
+
+#GreyFooter {
+    background-color: #232a27;
+    color: white;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+#GreyFooter .row {
+    margin-bottom: 20px;
+}
+
+#GreyFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#GreyFooter h5 {
+    font-size: 18px;
+    color: #FFCB9A;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#GreyFooter a {
+    color: white;
+    text-decoration: none;
+}
+
+#GreyFooter a:hover,
+#GreyFooter a:focus {
+    text-decoration: none;
+    color: #FFCB9A;
+}
+
+#GreyFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#GreyFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#GreyFooter .social-networks a:hover {
+    text-decoration: none;
+    color: #FFCB9A;
+}
+
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS    
+------------------------------------------------------------------------------*/
+
+/* page-index ----------------------------------------------------------------*/
+
+#menu_card {
+    background-color: #232a27;
+    min-height: 220px;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#menu_card:hover,
+#menu_card:focus {
+    background-color: #0E5254;
+}
+
+#menu_card p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#menu_card i {
+    font-size: 60px;
+    padding: 30px 30px 15px 30px;
+}
+
+/* page-selection ------------------------------------------------------------*/
+
+#title_card {
+    background-color: #232a27;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+#title_card p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 17px;
+    margin-bottom: 0px;
+}
+
+#title_card h3 {
+    color: #FFCB9A;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#algorithm {
+    background-color: #232a27;
+    min-height: 220px;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#algorithm:hover,
+#algorithm:focus {
+    background-color: #0E5254;
+}
+
+#algorithm p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#plot {
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+}
+
+/* page-algorithm ------------------------------------------------------------*/
+
+#info_content {
+    background-color: #232a27;
+    min-height: 220px;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#info_content h2 {
+    padding: 0px 10px 20px 10px;
+    color: #FFCB9A;
+}
+
+#pyplot {
+    background-color: #232a27;
+    min-height: 220px;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    margin: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#pyplot h2 {
+    padding: 0px 10px 20px 10px;
+    color: #FFCB9A;
+}
+
+#pyplot #plot {
+    height: 70%;
+    width: 70%;
+}
+
+.card-panel {
+    background-color: #0E5254;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 5px 5px 15px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.card-panel:hover {
+    background-color: #093233;
+}
+
+.card-panel a {
+    text-decoration: none
+}
+
+.card-panel a>p {
+    color: white;
+    margin-bottom: 0px;
+}
+
+#red_flag:hover {
+    background-color: red;
+}
+
+/* Other ---------------------------------------------------------------------*/
+
+#terms_card {
+    background-color: #232a27;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    vertical-align: middle;
+    padding: 0px
+}
+
+#terms_card li, #terms_card p {
+    color: white;
+    font-size: 14px;
+}
+
+#terms_card h3 {
+    color: #D9B08C;
+    font-size: 24px;
+    margin: 13px;
+}
+
+#terms_card ol {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#contact_card {
+    background-color: #232a27;
+    min-height: 220px;
+    border-style: outset;
+    border-color: #D9B08C;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 30px;
+    color: black;
+}
+
+#contact_card p {
+    font-size: 30px;
+    color: #FFCB9A;
+    font-style: italic;
+    padding-bottom: 50px; 
+    padding-top: 50px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: white;
+}
+
+label {
+    color: #FFCB9A;
+    font-size: 20px;
+}
+
+
+/*----------------------------------------------
+    MEDIA QUERIES     
+------------------------------------------------*/
+
+/* MIN WIDTHS ----------------------------------------------------------------*/
+
+@media(min-width:1811px) {
+    #page-index {
+        min-height: 1400px;
+    }
+    #page-selection {
+        min-height: 1400px;
+    }
+    #page-algorithm {
+        min-height: 1600px;
+    }
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        margin: 0 0 0 280px;
+        padding: 0;
+    }
+    .navbar-side {
+        width: 280px;
+        z-index: 1;
+    }
+    .sidebar-collapse>.nav>li>a {
+        padding: 14px 14px 14px 20px;
+    }
+    .navbar {
+        border-radius: 0px;
+    }
+    #header_card p {
+        font-size: 40px;
+        color: white;
+    }
+}
+
+/* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
+
+@media(max-width:1810px) {
+
+    #page-index {
+        min-height: 1000px;
+    }
+    #page-selection {
+        min-height: 1000px;
+    }
+    #page-algorithm {
+        min-height: 1200px;
+    }
+    
+    .col-md-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #title_card p {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 100px;
+    }
+    #menu_card p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 40px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-width: 160px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    #plot {
+        height: 60%;
+        width: 60%;
+    }
+    .card-panel {
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 18px;
+    }
+    #pyplot h2 {
+        font-size: 18px;
+    }
+    #pyplot #plot {
+        height: 70%;
+        width: 70%;
+    }
+
+    #terms_card {
+        display: none;
+    }
+    #subject {
+        max-height: 150px;
+    }
+
+}
+
+@media(max-width:1381px) {
+
+    #page-wrapper {
+        margin: 0 0 0 280px;
+    }
+    #page-index {
+        min-height: 800px;
+    }
+    #page-selection {
+        min-height: 1000px;
+    }
+    #page-algorithm {
+        min-height: 1200px;
+    }
+
+    .col-md-12 {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    #title_card p {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 100px;
+    }
+    #menu_card p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 20px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-width: 160px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    #plot {
+        height: 60%;
+        width: 60%;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px 2px 5px 2px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 18px;
+    }
+    #pyplot h2 {
+        font-size: 18px;
+    }
+    #pyplot #plot {
+        height: 70%;
+        width: 70%;
+    }
+    #subject {
+        max-height: 120px;
+    }
+
+}
+
+/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
+
+@media(max-width:1200px) {
+    #page-wrapper {
+        position: relative;
+        top: 50px;
+    }
+    #page-index {
+        min-height: 800px;
+    }
+    #page-selection {
+        min-height: 1500px;
+    }
+    #page-algorithm {
+        min-height: 1800px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+    .navbar-side {
+        top: 55px;
+    }
+    .top-navbar .nav>li>a {
+        padding: 16px;
+        font-size: 16px;
+    }
+    #title_card p {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 100px;
+    }
+    #menu_card p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 20px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-height: 50px;
+    }
+    #algorithm p {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    #plot {
+        height: 75%;
+        width: 75%;
+    }
+    .card-panel {
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 18px;
+    }
+    #pyplot h2 {
+        font-size: 18px;
+    }
+    #pyplot #plot {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media(max-width:1056px) {
+
+    #page-wrapper {
+        position: relative;
+        top: 40px;
+        margin: 0 0 0 260px;
+    }
+    #page-index {
+        min-height: 800px;
+    }
+    #page-selection {
+        min-height: 1450px;
+    }
+    #page-algorithm {
+        min-height: 1800px;
+    }
+    .navbar-side {
+        top: 60px;
+        width: 260px;
+    }
+    .top-navbar .nav>li>a {
+        padding: 16px;
+        font-size: 16px;
+    }
+    .sidebar-collapse>.nav>li>a {
+        font-size: 15px;
+    }
+    #algorithm {
+        min-height: 280px;
+    }
+    #algorithm p {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    #plot {
+        height: 75%;
+        width: 75%;
+    }
+    #info_card {
+        min-height: 120px;
+        padding: 10px;
+    }
+    #info_card h3 {
+        font-size: 14px;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 15px;
+    }
+    #pyplot h2 {
+        font-size: 15px;
+    }
+    #pyplot #plot {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media(max-width:993px) {
+    #page-wrapper {
+        position: relative;
+        top: 70px;
+    }
+    #page-index {
+        min-height: 1200px;
+    }
+    #page-selection {
+        min-height: 1250px;
+    }
+    #page-algorithm {
+        min-height: 2600px;
+    }
+    .navbar-side {
+        top: 60px;
+    }
+    .top-navbar .navbar-brand {
+        width: 250px;
+    }
+    #title_card p {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 50px;
+    }
+    #menu_card p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 30px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-height: 50px;
+        padding-top: 0px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #plot {
+        height: 0;
+        width: 0;
+    }
+    #info_card {
+        min-height: 0px;
+    }
+    #info_card h3 {
+        font-size: 12px;
+        padding: 0px;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 15px;
+    }
+    #pyplot h2 {
+        font-size: 15px;
+    }
+    #pyplot #plot {
+        height: 30%;
+        width: 30%;
+    }
+    #GreyFooter {
+        text-align: center;
+    }
+}
+
+@media(max-width:959px) {
+    .navbar-side {
+        top: 110px;
+    }
+}
+
+/* MAX WIDTHS: SMALL SCREEN---------------------------------------------------*/
+
+@media(max-width:767px) {
+    #page-wrapper {
+        position: relative;
+        top: 90px;
+        margin: 0 0 0 0px;
+    }
+    #page-index {
+        min-height: 1600px;
+    }
+    #page-selection {
+        min-height: 1250px;
+    }
+    #page-algorithm {
+        min-height: 2800px;
+    }
+    #top_icon {
+        font-size: 0px;
+    }
+    .navbar-side {
+        top: 95px;
+    }
+    .top-navbar .nav>li>a {
+        padding: 8px;
+        font-size: 14px;
+        color: #FFCB9A;
+    }
+    #NavReduce {
+        display: none;
+    }
+    #title_card p {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 50px;
+    }
+    #menu_card p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 30px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-height: 50px;
+        padding-top: 0px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #plot {
+        height: 0;
+        width: 0;
+    }
+    #info_card {
+        min-height: 0px;
+    }
+    #info_card h3 {
+        font-size: 12px;
+        padding: 0px;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 15px;
+    }
+    #pyplot h2 {
+        font-size: 15px;
+    }
+    #pyplot #plot {
+        height: 30%;
+        width: 30%;
+    }
+    #GreyFooter {
+        text-align: center;
+    }
+}
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
+
+@media(max-width:521px) {
+    #page-wrapper {
+        position: relative;
+        top: 100px;
+    }
+    #page-index {
+        min-height: 1400px;
+    }
+    #page-selection {
+        min-height: 1300px;
+    }
+    #page-algorithm {
+        min-height: 2800px;
+    }
+    .col-md-12 {
+        padding: 0px;
+    }
+    #dropdown1 {
+        left: 0px !important;
+    }
+    .top-navbar .nav>li>a {
+        padding: 8px;
+        font-size: 12px;
+        color: #FFCB9A;
+    }
+    .navbar-side {
+        top: 90px;
+    }
+    #title_card p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 50px;
+    }
+    #menu_card p {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 20px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-height: 50px;
+        padding-top: 0px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 15px;
+    }
+    #GreyFooter {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+    #GreyFooter .row {
+        margin-bottom: 10px;
+    }
+    #info_card {
+        min-height: 0px;
+    }
+    #info_card h3 {
+        font-size: 12px;
+        padding: 0px;
+    }
+    #pyplot #plot {
+        height: 60%;
+        width: 60%;
+        padding: 0px;
+    }
+    #pyplot {
+        padding-top: 0px;
+    }
+    #pyplot h2 {
+        font-size: 12px;
+    }
+    #contact_card {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    #page-wrapper {
+        position: relative;
+        top: 100px;
+    }
+    #page-selection {
+        min-height: 1250px;
+    }
+
+    .top-navbar .material-icons {
+        font-size: 20px;
+    }
+    .top-navbar .nav>li>a {
+        padding: 6px;
+        font-size: 10px;
+    }
+    #title_card p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 17px;
+    }
+    #menu_card {
+        min-height: 50px;
+    }
+    #menu_card p {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #menu_card i {
+        font-size: 20px;
+        padding: 10px 10px 5px 10px;
+    }
+    #algorithm {
+        min-height: 50px;
+        padding-top: 0px;
+    }
+    #algorithm p {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    #plot {
+        height: 0;
+        width: 0;
+    }
+    .card-panel {
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #info_content {
+        min-height: 0px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+    #info_content h2 {
+        padding: 0px 10px 10px 10px;
+        color: #FFCB9A;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:376px) {
+    #page-wrapper {
+        position: relative;
+        top: 80px;
+        margin-left: 0px;
+    }
+    #dropdown1 {
+        left: 0px !important;
+    }
+    .top-navbar .nav>li>a {
+        padding: 4px 0px 4px 0px;
+        font-size: 10px;
+    }
+    .top-navbar .material-icons {
+        font-size: 14px;
+    }
+    .navbar-side {
+        top: 85px;
+    }
+    #info_card {
+        min-height: 0px;
+    }
+    #info_card h3 {
+        font-size: 12px;
+        padding: 0px;
+    }
+    #GreyFooter {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+    #GreyFooter .row {
+        margin-bottom: 1px;
+    }
+}
+
+@media(max-width:321px) {
+
+    #dropdown1 {
+        left: -80px !important;
+        top: 40px !important;
+    }
+    .top-navbar .nav>li>a {
+        padding: 10px 0px 10px 0px;
+        font-size: 10px;
+    }
+    .navbar-side {
+        top: 100px;
+    }
+    #GreyFooter {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+    #GreyFooter .row {
+        margin-bottom: 1px;
+    }
+}
+
+
+
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
