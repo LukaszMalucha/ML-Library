@@ -563,7 +563,7 @@ html {
     border-color: #D9B08C;
     border-radius: 25px;
     vertical-align: middle;
-    padding: 0px
+    padding: 11px
 }
 
 #terms_card li, #terms_card p {
@@ -620,6 +620,63 @@ label {
     font-size: 20px;
 }
 
+
+/*----------------------------------------------
+    ANIMATIONS  
+------------------------------------------------*/
+
+#menu_card {
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+#plot {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+.card-panel p {
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /*----------------------------------------------
     MEDIA QUERIES     
