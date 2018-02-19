@@ -566,7 +566,8 @@ html {
     padding: 11px
 }
 
-#terms_card li, #terms_card p {
+#terms_card li,
+#terms_card p {
     color: white;
     font-size: 14px;
 }
@@ -596,9 +597,61 @@ html {
 #contact_card p {
     font-size: 30px;
     color: #FFCB9A;
-    font-style: italic;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
     padding-top: 50px;
+}
+
+#contact_card h2 {
+    padding: 0px 10px 10px 10px;
+    color: #FFCB9A;
+    font-size: 24px;
+}
+
+#contact_card h3 {
+    font-size: 30px;
+    color: #FFCB9A;
+    font-style: italic;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+#repo_content {
+    background-color: #232a27;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#repo_content h1,
+a {
+    color: white;
+    margin-top: 10px;
+}
+
+.small-name a {
+    color: #FFCB9A;
+
+}
+
+#repo_content li {
+    background-color: #0E5254;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 1px 1px 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+#repo_content li:hover {
+    background-color: #093233;
+
+}
+
+#repo_content a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 input[type=text],
@@ -694,6 +747,9 @@ label {
     #page-algorithm {
         min-height: 1600px;
     }
+    #page-projects {
+        min-height: 1400px;
+    }
 }
 
 @media(min-width:768px) {
@@ -730,12 +786,13 @@ label {
     #page-algorithm {
         min-height: 1200px;
     }
-    
+
+
     .col-md-12 {
         padding-left: 5px;
         padding-right: 5px;
     }
-    
+
     #title_card p {
         font-size: 30px;
         font-weight: bold;
@@ -811,6 +868,9 @@ label {
     #page-algorithm {
         min-height: 1200px;
     }
+    #page-projects {
+        min-height: 1200px;
+    }
 
     .col-md-12 {
         padding-left: 3px;
@@ -869,6 +929,17 @@ label {
         height: 70%;
         width: 70%;
     }
+    #repo_content {
+        margin: 0px;
+        padding: 0px;
+    }
+    #repo_content h1,
+    h2 {
+        font-size: 18px;
+    }
+    #repo_content li {
+        font-size: 12px;
+    }
     #subject {
         max-height: 120px;
     }
@@ -890,6 +961,9 @@ label {
     }
     #page-algorithm {
         min-height: 1800px;
+    }
+    #page-projects {
+        min-height: 1200px;
     }
 
     .row {
@@ -971,6 +1045,9 @@ label {
     #page-algorithm {
         min-height: 1800px;
     }
+    #page-projects {
+        min-height: 1250px;
+    }
     .navbar-side {
         top: 60px;
         width: 260px;
@@ -1039,6 +1116,9 @@ label {
     #page-algorithm {
         min-height: 2600px;
     }
+    #page-projects {
+        min-height: 1800px;
+    }
     .navbar-side {
         top: 60px;
     }
@@ -1104,6 +1184,7 @@ label {
         height: 30%;
         width: 30%;
     }
+
     #GreyFooter {
         text-align: center;
     }
@@ -1131,6 +1212,9 @@ label {
     }
     #page-algorithm {
         min-height: 2800px;
+    }
+    #page-projects {
+        min-height: 1800px;
     }
     #top_icon {
         font-size: 0px;
@@ -1226,6 +1310,9 @@ label {
     #page-algorithm {
         min-height: 2800px;
     }
+    #page-projects {
+        min-height: 1800px;
+    }
     .col-md-12 {
         padding: 0px;
     }
@@ -1281,34 +1368,43 @@ label {
         color: #FFCB9A;
         font-size: 15px;
     }
-    #GreyFooter {
-        font-size: 14px;
-        padding-top: 0px;
-    }
-    #GreyFooter .row {
-        margin-bottom: 10px;
-    }
-    #info_card {
-        min-height: 0px;
-    }
-    #info_card h3 {
-        font-size: 12px;
-        padding: 0px;
-    }
-    #pyplot #plot {
-        height: 60%;
-        width: 60%;
-        padding: 0px;
-    }
-    #pyplot {
-        padding-top: 0px;
-    }
-    #pyplot h2 {
-        font-size: 12px;
-    }
-    #contact_card {
-        padding: 10px;
-    }
+}
+
+#info_card {
+    min-height: 0px;
+}
+
+#info_card h3 {
+    font-size: 12px;
+    padding: 0px;
+}
+
+#pyplot #plot {
+    height: 60%;
+    width: 60%;
+    padding: 0px;
+}
+
+#pyplot {
+    padding-top: 0px;
+}
+
+#pyplot h2 {
+    font-size: 12px;
+}
+
+#contact_card {
+    padding: 10px;
+}
+
+#GreyFooter {
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+#GreyFooter .row {
+    margin-bottom: 10px;
+}
 
 }
 

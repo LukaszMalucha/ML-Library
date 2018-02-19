@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Deep Learning</title>
+    <title>Our Projects</title>
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize-->
@@ -20,6 +20,10 @@
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- jQuery & GitHub -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/github-information.js"></script>
 </head>
 
 <body>
@@ -158,44 +162,49 @@
 
 
         <!-- /. SIDE NAVBAR  ************************************************************************************************************************************************************************************************-->
+
+        <!-- PAGE-WRAPPER -->
         <div id="page-wrapper">
-            <div id="page-selection">
+
+            <!-- PAGE-INDEX -->
+            <div id="page-projects">
                 <div class="dashboard-cards">
                     <div class="row"></div>
                     <div class="row"></div>
                     <div class="row">
-                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
-                        <div class="col-md-10 text-center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                        <div class="col-md-8 text-center">
                             <div class="card" id="title_card">
-                                <p>DEEP LEARNING ALGORITHMS</p>
+                                <p>OUR PROJECTS</p>
                             </div>
                         </div>
-                        <div class="col-xs-2 col-sm-2 col-md-0 col-lg-1"></div>
                         <div class="row"></div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                     </div>
-                    <div class="row" id="menu_row">
-                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
-                        <div class="col-md-10 text-center">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 text-center">
-                                    <a href="algo-DL-ANN.html">
-                                        <div class="card" id="algorithm">
-                                            <img id="plot" src="assets/img/ANN.gif">
-                                            <p>Artificial Neural Networks</p>
-                                        </div>
-                                    </a>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                        <div class="col-md-8 text-center">
+                            <div class="card" id="contact_card">
+                                <h2>You can also search on other user profiles</h2>
+                                <div class="col-md-12 text-center">
+                                    <input type="text" id="gh-username" value="LukaszMalucha" oninput="fetchGitHubInformation()" />
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 text-center">
-                                    <a href="algo-DL-CNN.html">
-                                        <div class="card" id="algorithm">
-                                            <img id="plot" src="assets/img/CNN.gif">
-                                            <p>Convolutional Neural Networks</p>
+                                <div class="row">
+                                    <div class="col-md-6 text-left">
+                                        <div id="repo_content">
+                                            <div id="gh-user-data"></div>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <div id="repo_content">
+                                            <div id="gh-repo-data"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1"></div>
+                        <div class="row"></div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
                     </div>
                 </div>
                 <footer id="GreyFooter">
@@ -238,30 +247,25 @@
                     </div>
                 </footer>
             </div>
-            <!-- Page-Inner -->
+            <!-- PAGE-INDEX -->
+
         </div>
-        <!-- Page-Wrapper -->
+        <!-- PAGE-WRAPPER -->
+
     </div>
-    <!-- /. WRAPPER  -->
+    <!-- WRAPPER -->
+
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
 
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- Materialize Js -->
     <script src="assets/materialize/js/materialize.min.js"></script>
 
     <!-- Metis Menu Js -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- Morris Chart Js -->
-    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
-    <script src="assets/js/morris/morris.js"></script>
-
-
-    <script src="assets/js/easypiechart.js"></script>
-    <script src="assets/js/easypiechart-data.js"></script>
-
-    <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
 
     <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
