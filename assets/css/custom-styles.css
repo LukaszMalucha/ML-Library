@@ -62,6 +62,15 @@ html {
     background-size: cover
 }
 
+#page-projects {
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    padding: 15px 30px;
+    background-image: url('../../assets/img/backg.png');
+    background-size: cover
+}
+
+
 .text-center {
     text-align: center;
 }
@@ -94,12 +103,17 @@ html {
     z-index: 300;
     background: #232a27;
     border-bottom: none;
+    padding-right: 10px;
 }
 
 .navbar-brand i.large.material-icons {
     float: left;
     font-size: 31px;
     margin-right: 6px;
+}
+
+.navbar-brand {
+    margin-top: 0px;
 }
 
 .top-navbar .navbar-brand {
@@ -140,7 +154,7 @@ html {
 
 .navbar-brand i.large.material-icons {
     float: left;
-    font-size: 36px;
+    font-size: 34px;
     margin-right: 6px;
 }
 
@@ -1191,8 +1205,9 @@ label {
 }
 
 @media(max-width:959px) {
-    .navbar-side {
-        top: 110px;
+
+    .top-navbar {
+        padding-right: 2px;
     }
 }
 
