@@ -77,12 +77,11 @@ https://jquery.com/
 
 ## ML Library Structure
 
-1. Main Page
-    2. ML selection pages
-    	3. Specific algorithm pages
+1. Main Page --> ML selection pages --> Specific algorithm pages
 1. Contact page
 1. Terms & Condition page
-1. Mission Statement
+2. Our Projects page
+1. Mission Statement page
 1. Work in Progress page (for milestones projects available in the future)
 
 
