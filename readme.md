@@ -96,7 +96,8 @@ Footer:<br>
 https://tutorialzine.com/2016/10/freebie-5-fantastic-bootstrap-footers
 
 Contact form:<br>
-https://www.w3schools.com/howto/howto_css_contact_form.asp
+https://www.w3schools.com/howto/howto_css_contact_form.asp<br>
+https://github.com/Code-Institute-Solutions/EmailJS/blob/master/03-sending_emails/contact.html
 
 GitHub API:<br>
 https://github.com/Code-Institute-Solutions/TheGitHubAPI/tree/master/07-lets_fix_some_bugs
