@@ -1,5 +1,7 @@
 # ML Library Project
 
+https://lukaszmalucha.github.io/UCFD-Milestone-Project/
+
 ## Project Case:
 Acquiring information about specific machine learning algorithms might be time-consuming sometimes.
 We not always have a time to go through official documentation, especially when we sit with our mobile phone and our job interview starts in 15 mins…..
