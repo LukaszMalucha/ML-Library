@@ -632,6 +632,10 @@ html {
     
 }
 
+#contact_card .active {
+    color: #FFCB9A  !important;
+}
+
 
 #repo_content {
     background-color: #232a27;
