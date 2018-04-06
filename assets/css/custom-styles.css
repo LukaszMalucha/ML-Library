@@ -687,6 +687,11 @@ textarea {
     background-color: white;
 }
 
+input[type="text"]:focus:not([readonly]) {
+    border-bottom: none;
+    box-shadow: none;
+}
+
 label {
     color: #FFCB9A;
     font-size: 20px;
@@ -1548,5 +1553,7 @@ label {
         margin-bottom: 1px;
     }
 }
+
+
 
 
