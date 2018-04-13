@@ -629,11 +629,11 @@ html {
     font-style: italic;
     padding-bottom: 50px;
     padding-top: 50px;
-    
+
 }
 
 #contact_card .active {
-    color: #FFCB9A  !important;
+    color: #FFCB9A !important;
 }
 
 
@@ -1397,43 +1397,43 @@ label {
         color: #FFCB9A;
         font-size: 15px;
     }
-}
 
-#info_card {
-    min-height: 0px;
-}
 
-#info_card h3 {
-    font-size: 12px;
-    padding: 0px;
-}
+    #info_card {
+        min-height: 0px;
+    }
 
-#pyplot #plot {
-    height: 60%;
-    width: 60%;
-    padding: 0px;
-}
+    #info_card h3 {
+        font-size: 12px;
+        padding: 0px;
+    }
 
-#pyplot {
-    padding-top: 0px;
-}
+    #pyplot #plot {
+        height: 60%;
+        width: 60%;
+        padding: 0px;
+    }
 
-#pyplot h2 {
-    font-size: 12px;
-}
+    #pyplot {
+        padding-top: 0px;
+    }
 
-#contact_card {
-    padding: 10px;
-}
+    #pyplot h2 {
+        font-size: 12px;
+    }
 
-#GreyFooter {
-    font-size: 14px;
-    padding-top: 0px;
-}
+    #contact_card {
+        padding: 10px;
+    }
 
-#GreyFooter .row {
-    margin-bottom: 10px;
-}
+    #GreyFooter {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+
+    #GreyFooter .row {
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -1557,7 +1557,3 @@ label {
         margin-bottom: 1px;
     }
 }
-
-
-
-
