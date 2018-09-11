@@ -1,6 +1,6 @@
 # ML Library Project
 
-https://lukaszmalucha.github.io/UCFD-Milestone-Project/
+[Visit Website](https://lukaszmalucha.github.io/ML-Library/)
 
 ## Project Case:
 Acquiring information about specific machine learning algorithms might be time-consuming sometimes.
@@ -85,6 +85,11 @@ https://jquery.com/
 2. Our Projects page
 1. Mission Statement page
 1. Work in Progress page (for milestones projects available in the future)
+
+<br>
+![ml-lib](https://user-images.githubusercontent.com/26208598/45377204-cfa14a80-b5f1-11e8-88a5-106b311f541f.JPG)
+
+
 
 
 ## Credits & Inspirations:
