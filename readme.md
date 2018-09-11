@@ -87,6 +87,7 @@ https://jquery.com/
 1. Work in Progress page (for milestones projects available in the future)
 
 <br>
+
 ![ml-lib](https://user-images.githubusercontent.com/26208598/45377204-cfa14a80-b5f1-11e8-88a5-106b311f541f.JPG)
 
 
