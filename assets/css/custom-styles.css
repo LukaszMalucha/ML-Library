@@ -366,8 +366,10 @@ html {
     background-color: #232a27;
     color: white;
     padding-top: 10px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
 }
 
